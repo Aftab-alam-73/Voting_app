@@ -3,6 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 10px;
 }
 .subContainer{
     display: flex;
@@ -34,4 +36,7 @@
 }
 .btn:active{
     font-size: 13px;
+}
+.errorMessage{
+    color: red;
 }

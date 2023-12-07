@@ -4,6 +4,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
 }
 .candidates{
     width: 200px;
@@ -20,4 +23,24 @@
     border: 2px solid black;
     border-radius: 7px;
     padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons{
+    position: absolute;
+    top: 0;
+    right: 0;
+ 
+    padding: 10px;
+}
+.btn{
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    background-color: lightgreen;
+    cursor: pointer;
+}
+.btn:active{
+   background-color: lawngreen;
 }

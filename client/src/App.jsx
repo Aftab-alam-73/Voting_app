@@ -3,15 +3,13 @@ import Login from './pages/login/Login'
 import Register from './pages/register/Register'
 import Votingpage from './pages/votingpage/Votingpage'
 import Adminpage from './pages/adminpage/Adminpage'
+import AddCandidate from './pages/addcandidate/AddCandidate'
+import RemoveCandidate from './pages/removecandidate/RemoveCandidate'
 
 const App = () => {
   const router=createBrowserRouter([
     {
-      path:"/",
-      element:<h1>Hello world</h1>
-    },
-    {
-        path:"/login",
+        path:"/",
         element:<Login/>
     },
     {
@@ -25,6 +23,14 @@ const App = () => {
     {
         path:"/adminpage",
         element:<Adminpage/>
+    },
+    {
+       path:"/addcandidate",
+       element:<AddCandidate/> 
+    },
+    {
+       path:"/removecandidate",
+       element:<RemoveCandidate/> 
     },
   ])
   return (
